@@ -1,3 +1,110 @@
-img {
-	height: 100px
+body{
+	margin: 0;
+	padding: 0;
+	
+}
+
+header {
+	width: 100%;
+	height: 100%;
+	flex-direction: row;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	z-index: 4;
+	left: 30%;
+
+	
+}
+
+ul { 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 25px;
+	border: 1px solid #00416d ; 
+	width: 116px;
+	height: 30px;
+	margin: 3%;
+	background-color: #fff;
+	text-decoration: none;	
+}
+
+.home {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap; 
+
+}
+
+.imagem1 {
+	width: 60%;
+	height: 40%;
+}
+
+.home p {
+	width: 20%;
+	height: 40%;
+}
+
+main {
+
+}
+
+.imagem2 {
+	width: 100%;
+	height: 100%;
+}
+
+.sobre div {
+	position: absolute;
+	z-index: 3;
+	top: 105%;
+	left: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 25px;
+	border: 1px solid #00416d; 
+	background-color: #fff;
+	text-decoration: none;
+	width: 40%;
+	height: 115%;
+	padding: 1%;
+}
+
+.sobre div p {
+	/*font-size: 1.88em;
+	color:  #95989a;
+	font-style: normal;
+	text-align: left;
+	line-height: 0.8em;
+	letter-spacing: 0em;*/
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.ações {
+	
+}
+
+.imagem3 {
+	width: 200px;
+}
+
+.imagem4 {
+	width: 200px;
 }
