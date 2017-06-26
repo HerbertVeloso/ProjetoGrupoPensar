@@ -360,18 +360,18 @@ video {
 		font-style: normal;
 		text-align: left;
 		font-family: 'Source Sans Pro', sans-serif;
-	
+	}
 }
 
 
-@media only screen and (max-width: 1175px){
+@media (max-width: 1175px){
 	
 	.home {
 		padding-top: 7%;
 	}
 
 	.imagem1 {
-		width: 50%;
+		max-width: 50%;
 		height: 35%;
 	}
 
@@ -392,5 +392,27 @@ video {
 		font-style: normal;
 		text-align: left;
 		font-family: 'Source Sans Pro', sans-serif;
+	}
+}
+
+@media only screen and (max-width: 500px){
 	
+	.home {
+		padding-top: 7%;
+	}
+
+	.imagem1 {
+		width: 200px;
+
+	
+}
+
+
+@media (max-width: 460px){
+
+	.imagem1 {
+		width: 100%;
+	
+	}
+
 }
