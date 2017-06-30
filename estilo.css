@@ -55,7 +55,7 @@ li {
 
 .imagem1 {
 	width: 60%;
-	height: 40%;
+/*	height: 40%;*/
 }
 
 .home p {
@@ -67,7 +67,6 @@ li {
 	font-style: normal;
 	text-align: left;
 	letter-spacing: 0em;
-
 }
 
 .sobre {
@@ -267,7 +266,6 @@ video {
     position: absolute;
     left: 60%;
     top: 50%;
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -275,7 +273,7 @@ video {
     border: 1px solid #00416d;
     background-color: #fff;
     text-decoration: none;
-    width: 23%;
+    width: 30%;
     height: 30%;
     padding: 1%;
     font-size: 0.8em;
@@ -333,7 +331,7 @@ video {
 }
 
 @media only screen and (max-width: 1310px){
-	
+
 	.home {
 		padding-top: 2%;
 	}
@@ -407,6 +405,9 @@ video {
 		font-size: 0.82em;
 	}
 
+	.conteinercontato1 {
+	    width: 35%;
+	}
 	
 }
 
@@ -416,4 +417,29 @@ video {
 		left: 35%;
 		width: 60%;
 	}
+
+	.conteinercontato1 {
+	    height: 40%;
+	}
+
+	.conteinerações1 {
+		flex-direction: column;
+	}
+
+	.blocoações1 {
+	align-self: flex-start;
+	width: 30%;
+	height: 60%;
+	padding: 1%;
+	margin-right: 5%;
+
 }
+
+@media ( max-width: 768px) {
+
+	
+
+
+}
+
+
