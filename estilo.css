@@ -364,7 +364,7 @@ video {
 }
 
 
-@media (max-width: 1175px){
+@media (max-width: 1180px){
 	
 	.home {
 		padding-top: 7%;
@@ -376,43 +376,44 @@ video {
 	}
 
 	.sobre div {
-		top: 10%;
-		width: 40%;
-	    height: 70%;
-	    font-size: 0.8em;
-		
+		left: 52.5%;
+		width: 42.5%;
+	    height: 75%;
 	}
 
 	.sobre div h2 {
-		font-size: 1.61em;
+		font-size: 1.50em;
 	}
 
 	.sobre div p {
-		color:  #95989a;
-		font-style: normal;
-		text-align: left;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 0.85em;
 	}
 }
 
-@media only screen and (max-width: 500px){
-	
-	.home {
-		padding-top: 7%;
+@media ( max-width: 980px) {
+
+	.home p {
+		font-size: 0.85em;
 	}
 
-	.imagem1 {
-		width: 200px;
+	.sobre div {
+		top: 2.5%;
+		left: 47%;
+		width: 47%;
+	    height: 90%;
+	}
+
+	.sobre div p {
+		font-size: 0.82em;
+	}
 
 	
 }
 
+@media ( max-width: 840px) {
 
-@media (max-width: 460px){
-
-	.imagem1 {
-		width: 100%;
-	
+	.sobre div {
+		left: 35%;
+		width: 60%;
 	}
-
 }
