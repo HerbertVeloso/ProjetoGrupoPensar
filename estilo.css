@@ -1,37 +1,42 @@
 body{
 	margin: 0;
 	padding: 0;
-	
+	font-family: 'Source Sans Pro', sans-serif;
+	color:  #95989a;
+	font-style: normal;
+	text-align: left;
+	letter-spacing: 0em;	
 }
 
 header {
 	width: 100%;
 	height: 100%;
-	flex-direction: row;
 }
 
 nav {
+	position: fixed;
+	z-index: 4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav ul { 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	align-self: center;
-	position: fixed;
-	z-index: 4;
-	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-ul { 
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
-}
-
-a {
-	text-decoration: none;
-}
-
-li {
+nav li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -41,28 +46,44 @@ li {
 	width: 116px;
 	height: 30px;
 	background-color: #fff;
-	text-decoration: none;	
 	margin: 20px;
 }
 
-.home {
+h2 { 
+	font-size: 1.61em; 
+	margin: 0;
+}
+
+h3 { 
+	font-size: 1.30em;
+	margin: 0;
+}
+
+p { 
+	font-size: 0.9em;
+	margin: 0;
+}
+
+.seção {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.home {
 	flex-direction: row;
-	flex-wrap: wrap;
+	min-height: 100vh;
 }
 
-.imagem1 {
+.home-imagem-logo {
 	width: 60%;
-/*	height: 40%;*/
+	margin-left: 5%
 }
 
-.home p {
+.home-descricao {
 	width: 20%;
 	height: 40%;
 	font-size: 0.94em;
-	font-family: 'Source Sans Pro', sans-serif;
 	color: #95989a;
 	font-style: normal;
 	text-align: left;
@@ -70,180 +91,86 @@ li {
 }
 
 .sobre {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	margin-top: 2.5%;
-	margin-top: 10%;
+	display: flex;
+	justify-content: flex-end;
+	align-content: flex-end;
+	align-items: center;
+	background: url("Assets/Público_Sarau do Alemao_Foto Marcus Menezes.jpg") ;
+	background-size: cover;
+	min-height: 100vh;
+	padding: 5%
 }
 
-.imagem2 {
-	width: 100%;
-	height: 100%;
-}
-
-.sobre div {
-	position: absolute;
-    z-index: 3;
-    top: 10%;
-    left: 55%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.sobre-descrição {
     flex-direction: column;
     border-radius: 25px;
     border: 1px solid #00416d;
     background-color: #fff;
-    text-decoration: none;
-    width: 30%;
+    width: 40%;
     height: 70%;
-    padding: 1%;
-    font-size: 0.9em;
-	font-family: 'Source Sans Pro', sans-serif;
+    padding: 1.25em;
 	color: #95989a;
-	font-style: normal;
-	text-align: left;
 }
 
-.sobre div h2 {
-	font-size: 1.61em;
-	font-family: 'Source Sans Pro', sans-serif;
-	color: #95989a;
-	font-style: normal;
-	text-align: left;
-	letter-spacing: 0em;
-	margin: 0;
-}
-
-.sobre div p {
-	color:  #95989a;
-	font-style: normal;
-	text-align: left;
-	font-size: 0.9em;
-	font-family: 'Source Sans Pro', sans-serif;
+@media screen and (max-width: 1024px){
+	.sobre-descrição {
+		width: 	65%
+	}
 }
 
 .ações {
-	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
-	align-content: center;
-	justify-content: center;
+	flex-wrap: wrap;	
 	margin-top: 2.5%;
 }
 
-.ações h2 {
-	position: relative;
-	left: -40%;
-	font-size: 1.61em;
-	font-family: 'Source Sans Pro', sans-serif;
-	color: #95989a;
-	font-style: normal;
-	text-align: left;
-	letter-spacing: 0em;
-	margin: 0;
-}
-
-.conteinerações1 {
-	display: flex;
-	justify-content: center;
-	align-content: center;
+.ações-sarau {
 	flex-direction: row;
 }
 
-.blocoações1 {
+.ações h2 {
+	align-self: flex-start;
+}
+
+.ações-sarau-descrição {
 	align-self: flex-start;
 	width: 30%;
 	height: 60%;
-	padding: 1%;
-	margin-right: 5%;
-}
-
-.blocoações1 h3 {
-	font-size: 1.30em;
-	font-family: 'Source Sans Pro', sans-serif;
-	color: #95989a;
-	font-style: normal;
-	text-align: left;
-	letter-spacing: 0em;
-	margin: 0;
-}
-
-.blocoações1 p {
-	color:  #95989a;
-	font-style: normal;
-	text-align: left;
-	font-size: 0.9em;
-	font-family: 'Source Sans Pro', sans-serif;
+	margin: auto;
 }
 
 video {
 	width: 50%;
-	height: ;
 }
 
-.conteinerações2 {
+.ações-pensarcine-favela {
 	display: flex;
-	padding: 4%;
 	justify-content: center;
-	align-content: center;
+	padding: 4%;
+	width: 100%;
+	
 }
 
-.blocoações2 {
+.ações-pensarcine {
+
 	width: 35%;
 	height: 40%;
 	margin-left: 2%;
 	padding: 1%;
 }
 
-.blocoações2 h3 {
-	font-size: 1.30em;
-	font-family: 'Source Sans Pro', sans-serif;
-	color: #95989a;
-	font-style: normal;
-	text-align: left;
-	letter-spacing: 0em;
-	margin: 0;
-}
-
-.blocoações2 p {
-	color:  #95989a;
-	font-style: normal;
-	text-align: left;
-	font-size: 0.9em;
-	font-family: 'Source Sans Pro', sans-serif;
-}
-
-.imagem3 {
+.ações-pensarcine-imagem {
 	width: 100%;
 }
 
-.blocoações3 {
+.ações-favela {
 	width: 35%;
-	height: 60%;
+	height: 40%;
 	margin-left: 2%;
 	padding: 1%;
 }
 
-.blocoações3 h3 {
-	font-size: 1.30em;
-	font-family: 'Source Sans Pro', sans-serif;
-	color: #95989a;
-	font-style: normal;
-	text-align: left;
-	letter-spacing: 0em;
-	margin: 0;
-}
-
-.blocoações3 p {
-	color:  #95989a;
-	font-style: normal;
-	text-align: left;
-	font-size: 0.9em;
-	font-family: 'Source Sans Pro', sans-serif;
-}
-
-.imagem4 {
+.ações-favela-imagem {
 	width: 100%;
 }
 
@@ -251,195 +178,178 @@ video {
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
-	position: relative;
-	width: 100%;
-	height: 100%;
+	background: url("Sarau do Alemao Fundo.jpg") center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
 }
 
-.imagem5 {
-	width: 100%;
-	height: 100%;
-}
-
-.conteinercontato1 {
-	display: flex;
-    position: absolute;
-    left: 60%;
-    top: 50%;
-    align-items: center;
-    justify-content: center;
+.bloco-contato {
     flex-direction: column;
     border-radius: 25px;
     border: 1px solid #00416d;
     background-color: #fff;
-    text-decoration: none;
-    width: 30%;
-    height: 30%;
+    min-width: 25%;
+    min-height: 30%;
     padding: 1%;
-    font-size: 0.8em;
+    margin: 5%;
 }
 
-.conteinercontato1 h2 {
-	font-size: 1.61em;
-	font-family: 'Source Sans Pro', sans-serif;
-	color: #95989a;
-	font-style: normal;
-	text-align: left;
-	letter-spacing: 0em;
-	margin: 0;
-}
-
-.conteinercontato1 p {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1.25em;
-	color: #95989a;
-	font-style: normal;
-	text-align: left;
+.bloco-contato p {
 	line-height: 1.07em;
-	letter-spacing: 0em;
-	margin: 0;
 }
 
-.blococontato {
+.contato-resdesocial-doações {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	margin: 5%;
 }
 
-.itemcontato1 {
+.icone-rede-social {
+	width: 50px;
+}
+
+.contato-doações-lista {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 }
 
-.itemcontato2 p {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1.25em;
-	color: #95989a;
-	font-style: normal;
-	text-align: left;
-	line-height: 1.07em;
-	letter-spacing: 0em;
-	margin: 0;
+.contato-doações-lista-item {
+	list-style: none;
 }
 
-.imagem6 {
-	width: 40%;
-}
-
-@media only screen and (max-width: 1310px){
+@media screen and (max-width: 1000px) {
 
 	.home {
-		padding-top: 2%;
+		flex-direction: column;
+		align-self: center;
 	}
 
-	li {
-		width: 100px;
-		height: 28px;
+	.home-imagem-logo {
+		width: 100%;
+		margin-left: 0%
 	}
 
-	.sobre div {
-		top: 10%;
-		width: 37%;
-	    height: 70%;
-	    font-size: 0.9em;
-		
-	}
-
-	.sobre div h2 {
-		font-size: 1.61em;
-	}
-
-	.sobre div p {
-		color:  #95989a;
-		font-style: normal;
-		text-align: left;
-		font-family: 'Source Sans Pro', sans-serif;
-	}
-}
-
-
-@media (max-width: 1180px){
-	
-	.home {
-		padding-top: 7%;
-	}
-
-	.imagem1 {
-		max-width: 50%;
-		height: 35%;
-	}
-
-	.sobre div {
-		left: 52.5%;
-		width: 42.5%;
-	    height: 75%;
-	}
-
-	.sobre div h2 {
-		font-size: 1.50em;
-	}
-
-	.sobre div p {
-		font-size: 0.85em;
-	}
-}
-
-@media ( max-width: 980px) {
-
-	.home p {
-		font-size: 0.85em;
-	}
-
-	.sobre div {
-		top: 2.5%;
-		left: 47%;
-		width: 47%;
-	    height: 90%;
-	}
-
-	.sobre div p {
-		font-size: 0.82em;
-	}
-
-	.conteinercontato1 {
-	    width: 35%;
-	}
-	
-}
-
-@media ( max-width: 840px) {
-
-	.sobre div {
-		left: 35%;
+	.home-descricao {
 		width: 60%;
+		margin-bottom: 5%;
 	}
 
-	.conteinercontato1 {
-	    height: 40%;
+}
+
+@media screen and (max-width: 768px) {
+	nav li {
+		margin: 5px;
+		width: 70px;
+		height: 25px;
 	}
 
-	.conteinerações1 {
+	.resposivo-tela-media {
+		flex-direction: column;
+		align-self: center;
+	}
+
+	.sobre {
+		padding: 2%
+	}
+
+	.sobre-descrição {
+		height: 96%;
+		width: 90%;
+	}
+
+	.ações-sarau-descrição {
+		width: 80%;
+		align-self: center;
+		margin-bottom: 4%;
+	}
+
+	video {
+		width: 100%;
+		align-self: center;
+	}
+
+	.ações-pensarcine-favela {
+		padding: 0%
+	}
+
+	.ações-pensarcine {
+		width: 100%;
+		align-self: center;
+		margin: 2%;
+		margin-top: 5%;
+	}
+
+	.ações-pensarcine h3 {
+		width: 96%;
+		align-self: center;
+		margin: 2%;
+	}
+
+	.ações-pensarcine p {
+		width: 80%;
+		align-self: center;
+		margin: 3% auto;
+	}
+
+	.ações-favela {
+		width: 100%;
+		align-self: center;
+		margin: 2%;
+	}
+
+	.ações-favela h3 {
+		width: 96%;
+		align-self: center;
+		margin: 2%;
+	}
+
+	.ações-favela p {
+		width: 80%;
+		align-self: center;
+		margin: 3% auto;
+	}
+
+	.contato {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contato-resdesocial-doações {
 		flex-direction: column;
 	}
 
-	.blocoações1 {
-	align-self: flex-start;
-	width: 30%;
-	height: 60%;
-	padding: 1%;
-	margin-right: 5%;
+	.contato-resdesocial {
+		display: flex;		
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+	}
 
+	.icone-rede-social {
+		width: 50%;
+		margin-left: 25%;
+	}
 }
 
-@media ( max-width: 768px) {
-
-	
-
-
+@media (max-width: 300px) {
+	nav li {
+		margin: 1px;
+		width: 56px;
+		height: 23px;
+	}
 }
 
+.creditos {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: #95989a;
+	text-decoration: none;
+	margin: 1em;
+}
 
+.logovnw {
+	max-width: 45%;
+	margin: 1em;
+}
